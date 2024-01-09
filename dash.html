@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dash.css">
+
+    <title>Profile Dashboard</title>
+
+</head>
+
+<body>
+
+    <div class="profile-section">
+
+        <label for="fileInput">
+
+            <img id="profilePicture" src="avatar.png" alt="User Avatar" class="avatar">
+
+            <div class="upload-overlay">
+
+
+            </div>
+
+        </label>
+
+        <input type="file" id="fileInput" style="display: none" accept="image/*"
+            onchange="handleProfilePictureChange(this)">
+
+        <div class="profile-details">
+
+            <h2 id="username">John Doe</h2>
+
+            <p id="bio">Web Developer</p>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="actions-section">
+
+        <button type="button" onclick="toggleInput('phoneNumberInput')">Change Phone Number</button>
+
+        <input type="text" id="phoneNumberInput" style="display: none" placeholder="Enter new phone number"
+            onblur="changePhoneNumber(this)">
+
+        <button type="button" onclick="toggleInput('emailInput')">Change Email</button>
+
+        <input type="text" id="emailInput" style="display: none" placeholder="Enter new email"
+            onblur="changeEmail(this)">
+
+        <a href="forgot_password.html">Forget Password?</a>
+
+    </div>
+
+    <script src="dash.js"></script>
+
+</body>
+
+</html>
