@@ -1,21 +1,21 @@
-/* users-styles.css */
+/* styles.css */
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #191a56;
+    background-color: #ca8f8f4d;
 }
 
 .user-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1f3bdc3f;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ff840035;
+    box-shadow: 10px 10px 10px rgba(37, 37, 34, .60);
     border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
+    margin: 100px;
+    padding: 80px;
     height: 100%;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .user-options button {
-    background-color: #f0b400;
+    background-color: #ff840065;
     color: #000000;
     border: none;
     padding: 10px 20px;
@@ -46,7 +46,7 @@ body {
 }
 
 .user-options button:hover {
-    background-color: #dbc819;
+    background-color: #beb3b3;
 }
 
 .user-profile {
@@ -57,9 +57,10 @@ body {
 }
 
 #profilePicture {
+    box-shadow: #000000;
     border-radius: 50%;
     overflow: hidden;
-    width: 150px; /* Set a fixed size for the circular container */
+    width: 150px; 
     height: 150px;
     display: flex;
     align-items: center;
@@ -77,20 +78,20 @@ body {
 .user-profile h2 {
     margin: 10px 0;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #383535;
 }
 
 .user-profile p {
     margin: 0;
-    color: #ffffff;
+    color: #383535;
 }
 
 .user-options h3 {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #383535;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 1.2em;
-    color: #ffffff;
+    color: #383535;
 }
 
 @media screen and (min-width: 600px) {
