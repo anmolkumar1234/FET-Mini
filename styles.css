@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191a56;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f3bdc3f;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.user-options {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.user-options ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-options li {
+    flex: 1;
+}
+
+.user-options button {
+    background-color: #f0b400;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-options button:hover {
+    background-color: #dbc819;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#profilePicture {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px; /* Set a fixed size for the circular container */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#profilePicture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 4px solid #000000;
+}
+
+.user-profile h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.user-profile p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.user-options h3 {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+    .user-profile,
+    .user-options {
+        width: 80%;
+    }
+}

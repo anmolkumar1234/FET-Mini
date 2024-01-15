@@ -1,0 +1,44 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Page</title>
+</head>
+<body>
+
+    <div class="user-container">
+        <div class="user-profile" id="userProfile">
+            <label for="profilePictureInput">
+                <div id="profilePicture">
+                    <img src="profile-picture.jpg" alt="click" id="currentProfilePicture">
+                </div>
+               
+            </label>
+            <input type="file" id="profilePictureInput" style="display: none" accept="image/*" onchange="changeProfilePicture(event)">
+            <h2 id="userName">User Name</h2>
+            <p id="userEmail">Email: user@example.com</p>
+        </div>
+
+        <div class="user-options" id="userOptions">
+            <h3>User Options</h3>
+            <ul>
+                <li><button onclick="changePassword()">Change Password</button></li>
+                <li><button onclick="changeEmail()">Change Email</button></li>
+                <li><button onclick="changeUserName()">Change User Name</button></li>
+                <li>
+                    <button id="savedAudioBtn">Saved Audio</button>
+                    <select id="savedAudioDropdown" style="display: none" onchange="playSelectedAudio(this)">
+                        <!-- Options will be dynamically added here -->
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>
